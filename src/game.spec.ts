@@ -31,6 +31,11 @@ describe('Bowling game', () => {
     expect(g.score()).toBe(24)
   })
 
+  test('should score 300 for perfect game', () => {
+    rollMany(12, 10)
+    expect(g.score()).toBe(300)
+  })
+
   function rollStrike (): void {
     g.roll(10)
   }
