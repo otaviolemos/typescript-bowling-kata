@@ -1,3 +1,3 @@
-# typescript-base
+# typescript-bowling-kata
 
-Base typescript project with all necessary dependencies.
+Bowling Kata in TypeScript.
