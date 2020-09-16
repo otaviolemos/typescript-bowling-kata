@@ -4,8 +4,10 @@ export class Game {
 
   score (): number {
     let score = 0
-    for (let i = 0; i < this.rolls.length; i++) {
-      score += this.rolls[i]
+    let i = 0
+    for (let frame = 0; frame < 10; frame++) {
+      score += this.rolls[i] + this.rolls[i + 1]
+      i += 2
     }
     return score
   }
