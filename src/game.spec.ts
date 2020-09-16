@@ -17,13 +17,13 @@ describe('Bowling game', () => {
     expect(g.score()).toBe(20)
   })
 
-  test('should score 16 with a spare followed by a 3 ball', () => {
+  test('should score 16 for a spare followed by a 3 ball', () => {
     rollSpare()
     g.roll(3)
     expect(g.score()).toBe(16)
   })
 
-  test('should score 24 for a strike followed by a 3 and 4 balls', () => {
+  test('should score 24 for a strike followed by a 3 and a 4 balls', () => {
     rollStrike()
     g.roll(3)
     g.roll(4)
