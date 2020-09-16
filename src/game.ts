@@ -1,9 +1,11 @@
 export class Game {
-  roll (pins: number): void {
+  private _score: number = 0
 
+  get score (): number {
+    return this._score
   }
 
-  score (): number {
-    return 0
+  roll (pins: number): void {
+    this._score += pins
   }
 }
